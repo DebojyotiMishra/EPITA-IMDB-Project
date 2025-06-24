@@ -1,5 +1,10 @@
 # IMDB Clone & Data Analysis
 
+## Description
+
+A lightweight clone of the IMDb movie database implemented in PostgreSQL, with an emphasis on advanced SQL queries and performance analysis. Includes schema design, data import, query optimization, and analytical insights.
+
+
 ## Project Structure
 
 ```

@@ -1,6 +1,6 @@
 # Query Explanations
 
-## Home Page Query
+## 1. Home Page Query
 
 ### Purpose:
 
@@ -12,7 +12,7 @@ We joined `title_basics` and `title_ratings` using `tconst` to get movie details
 
 ---
 
-## Movie Listing Page Query
+## 2. Movie Listing Page Query
 
 ### Purpose:
 
@@ -26,7 +26,7 @@ For a better user experience, the results are sorted using `ORDER BY` with `NULL
 
 ---
 
-## Series Listing Page Query
+## 3. Series Listing Page Query
 
 ### Purpose:
 
@@ -38,7 +38,7 @@ We selected from `series_summary`, filtered for series with 'Drama' in the genre
 
 ---
 
-## Movie Summary Page Query
+## 4. Movie Summary Page Query
 
 ### Purpose:
 
@@ -50,7 +50,7 @@ This query selects all columns from `movie_summary` for a given `tconst`. It pro
 
 ---
 
-## Series Summary Page Query
+## 5. Series Summary Page Query
 
 ### Purpose:
 
@@ -62,7 +62,7 @@ Similar to the movie summary, this selects all columns from `series_summary` for
 
 ---
 
-## Adult Content Filter Query
+## 6. Adult Content Filter Query
 
 ### Purpose:
 
@@ -74,7 +74,7 @@ A simple filter on `isadult = false` (or `true` if needed) in `title_basics` to 
 
 ---
 
-## Search Engine Query
+## 7. Search Engine Query
 
 ### Purpose:
 
@@ -86,7 +86,7 @@ We used `ILIKE` for case-insensitive, partial matching on the `title` column in 
 
 ---
 
-## User Favorites Table (Schema Creation)
+## 8. User Favorites Table (Schema Creation)
 
 ### Purpose:
 
@@ -98,7 +98,7 @@ We created a `user_favorites` table with a composite primary key of `user_id` an
 
 ---
 
-## Top Director-Actor Pairs Query
+## 9. Top Director-Actor Pairs Query
 
 ### Purpose:
 
@@ -110,7 +110,7 @@ We joined `title_basics`, `title_crew`, `title_principals`, `title_ratings`, and
 
 ---
 
-## Average IMDb Rating per Genre Query
+## 10. Average IMDb Rating per Genre Query
 
 ### Purpose:
 
@@ -122,7 +122,7 @@ We split the `genres` column using `string_to_array` and `UNNEST` to handle mult
 
 ---
 
-## Average Rating per Genre per Decade Query
+## 11. Average Rating per Genre per Decade Query
 
 ### Purpose:
 
@@ -134,7 +134,7 @@ We calculated the decade using `FLOOR(startYear / 10) * 10`, split genres as bef
 
 ---
 
-## Rating by Runtime Category Query
+## 12. Rating by Runtime Category Query
 
 ### Purpose:
 
