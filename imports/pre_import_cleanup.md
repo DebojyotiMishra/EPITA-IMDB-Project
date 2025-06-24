@@ -83,4 +83,4 @@ Some rows have missing or null `primaryName`, which is critical for person displ
 awk -F'\t' 'NF >= 2 && $2 != "\\N"' name.basics.tsv > name.basics.filtered.tsv
 ```
 
-After having had cleaned up our data, we imported the data using the COPY commands in copy_commands.sql in imports/
+After having had cleaned up our data, we imported the data using the COPY commands in `copy_commands.sql` in `imports/`
